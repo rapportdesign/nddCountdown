@@ -1,28 +1,35 @@
 // JavaScript Document
 
-var day;
-
 switch (new Date().getDay()) {
-    case 0:
-        day = "Sunday";
+    case 0: // Sunday
+        nddCountdownWeekend();
         break;
-    case 1:
-        day = "Monday";
+    case 1: // Monday
+        nddCountdown();
         break;
-    case 2:
-        day = "Tuesday";
+    case 2: // Tuesday
+        nddCountdown();
         break;
-    case 3:
-        day = "Wednesday";
+    case 3: // Wednesday
+        nddCountdown();
         break;
-    case 4:
-        day = "Thursday";
+    case 4: // Thursday
+        nddCountdown();
         break;
-    case 5:
-        day = "Friday";
+    case 5: // Friday
+        nddCountdownWeekend();
         break;
-    case 6:
-        day = "Saturday";
-} 
+    case 6: // Saturday
+        nddCountdownWeekend();
+}
 
-document.getElementById("outputTest").innerHTML = day;
+function nddCountdown() {
+    "use strict";
+    document.getElementById("outputTest").innerHTML = "Weekday";
+}
+
+function nddCountdownWeekend() {
+    "use strict";
+    document.getElementById("outputTest").innerHTML = "Weekday";
+}
+
